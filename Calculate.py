@@ -45,7 +45,7 @@ def process_line(line):
 	copies_sold = long(items[COPIES_SOLD_INDEX])
 	app.app_count = app.app_count + copies_sold
 	app.app_sales_values = app.app_sales_values + convert_currency(items[EARNED_INDEX], items[CURRENCY_INDEX])
-	print "Read:" + items[CURRENCY_INDEX]
+	# print "Read:" + items[CURRENCY_INDEX]
 
 def convert_currency(val, cur):
 	if cur == "USD":
